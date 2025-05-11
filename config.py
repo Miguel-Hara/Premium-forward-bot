@@ -9,7 +9,7 @@ class Config:
     BOT_OWNER_ID = [int(id) for id in environ.get("BOT_OWNER_ID", '').split()]
     BOT_SESSION = environ.get("BOT_SESSION", "bot") 
 
-    PICS = (environ.get('PICS', 'https://graph.org/file/e223aea8aca83e99162bb.jpg'))
+    PICS = (environ.get('PICS', 'https://vault.pictures/media/images/b6/fc/0c/b6fc0c47c67c4b8c90de3ad127de9791.jpg'))
     
     DATABASE_URI = environ.get("DATABASE_URI", "")
     DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
