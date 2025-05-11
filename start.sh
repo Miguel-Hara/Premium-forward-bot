@@ -2,12 +2,12 @@ echo "Cloning Repo...."
 if [ -z $BRANCH ]
 then
   echo "Cloning main branch...."
-  git clone https://github.com/Jisshubot/Jisshu-forward-bot Jisshubot/Jisshu-forward-bot 
+  git clone https://github.com/Miguel-Hara/Premium-forward-bot Miguel-Hara/Premium-forward-bot 
 else
   echo "Cloning $BRANCH branch...."
-  git clone https://github.com/Jisshubot/Jisshu-forward-bot -b $BRANCH /Jisshu-forward-bot
+  git clone https://github.com/Miguel-Hara/Premium-forward-bot -b $BRANCH /Premium-forward-bot
 fi
-cd Jisshubot/Jisshu-forward-bot 
+cd Miguel-Hara/Premium-forward-bot 
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 gunicorn app:app & python3 main.py
